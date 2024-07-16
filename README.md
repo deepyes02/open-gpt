@@ -1,3 +1,11 @@
+# My Fork
+run  
+`pip -m install requirements.txt`  
+`python src/custom.py`  
+and all other dependencies required to run this.
+
+
+
 **Status:** Archive (code is provided as-is, no updates expected)
 
 # gpt-2

@@ -6,11 +6,11 @@ model = GPT2LMHeadModel.from_pretrained(model_name)
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 
 # Encode input text
-input_text = "I think that the world needs to be more careful of AI implementations, since it could turn dangerous"
+input_text = "What is god"
 inputs = tokenizer.encode(input_text, return_tensors='pt')
 
 # Generate text
-outputs = model.generate(inputs, max_length=1000, num_return_sequences=1)
+outputs = model.generate(inputs, max_length=200, num_return_sequences=1)
 generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
 print(generated_text)
